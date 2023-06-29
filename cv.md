@@ -1,5 +1,6 @@
 # Nikita Babikov
-Junior Frontend Developer
+**Junior Frontend Developer**
+
 ---
 
 ## Contact information:
