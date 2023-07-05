@@ -109,16 +109,30 @@ body {
     text-transform: uppercase;
 }
 
-#contacts .link {
+.link {
     text-decoration: none;
     color: black;
     transition: color 0.5s;
 }
 
-#contacts .link:hover {
+.link:hover {
     text-decoration: underline;
     color: blue;
 }
+
+.footer .github-icon {
+    width: 35px;
+}
+
+.footer .rsschool-icon {
+    width: 80px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-around;
+}
+
 
 .header {
     border: 1px solid red;
