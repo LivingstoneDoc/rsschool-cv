@@ -13,7 +13,7 @@
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                    <li class="nav-item"><a href="#about-me" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">About me</a></li>
                     <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                     <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
                     <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
@@ -24,7 +24,105 @@
     </header>
 
     <main class="main">
-        <div class="container"></div>
+        <div class="container main-container">
+            <section class="section" id="profile">
+                <h1 class="profile-title">Nikita Babikov</h1>
+                <p><span>Junior Frontend Developer</span></p>
+            </section>
+            <!-- <hr/> -->
+
+            <section class="section" id="contacts">
+                <h2 class="contacts-title">Contact information:</h2>
+                <ul>
+                    <li><span>Email:</span> nikita.babikov@mail.ru</li>
+                    <li><span>Telegram:</span> <a href="https://t.me/atlankitt">Nikita Babikov</a></li>
+                    <li><span>GitHub:</span> <a href="https://github.com/LivingstoneDoc">LivingstoneDoc</a></li>
+                    <li><span>RS School Discord Server Nickname:</span> Nick B. (@LivingstoneDoc)</li>
+                </ul>
+            </section>
+            <!-- <hr/> -->
+
+            <section class="section" id="summary">
+                <h2 class="summary-title">About me:</h2>
+                <p>I started to work as a Junior Frontend Developer and my aim is to become Senior Frontend Developer. My length of work is about one year now. In the future I want to learn some information about Backend part of the software devepolpent to understand the whole proccess of creating the web application.</p>
+                <p>I improve my skills every day, learn some new information about JS, Git and IT in general. I read articles connected with IT and listen to some podcasts on YouTube. Also I try to practice every day too.</p>
+                <p>I am hard-working, fast-learner and repsonsible person and I love to learn something new.</p>
+            </section>
+            <!-- <hr/> -->
+
+            <section class="section" id="skills">
+                <h2 class="skills-title">Skills:</h2>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JS Basics</li>
+                    <li>React</li>
+                    <li>Git, GitHub, GitLab</li>
+                    <li>VS Code</li>
+                    <li>Figma</li>
+                </ul>
+            </section>
+            <!-- <hr/> -->
+
+            <section class="section" id="code">
+                <h2 class="code-title">Code example:</h2>
+                <p>Given a random non-negative number, you have to return the digits of this number within an array in reverse order.</p>
+                <code>
+                    <pre>
+                        function getConvertArr(num) {
+                            num = String(num);
+                            let arrNumStr = num.split('');
+                            let newArrNum = [];
+                            if (num < 0) {
+                              return 'Please, type positive number';
+                            }
+                            for (let i = 0; i < arrNumStr.length; i++) {
+                              newArrNum[i] = arrNumStr[arrNumStr.length - i - 1];
+                              newArrNum[i] = Number(newArrNum[i]);
+                            }
+                            return newArrNum;
+                          }
+                    </pre>
+                </code>
+            </section>
+            <!-- <hr/> -->
+
+            <section class="section" id="education">
+                <h2 class="education-title">Education:</h2>
+                <ul>
+                    <li><span>University: </span>Izhevsk State Technical University
+                        <ul>
+                            <li>Informatics and Computer Engineering Institute</li>
+                        </ul>
+                    </li>
+                    <li><span>Courses:</span>
+                        <ul>
+                            <li><span>Udemy:</span>
+                                <ul>
+                                    <li>Web-developer (in progress)</li>
+                                    <li>JavaScript. From zero to result (in progress)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><span>RS School:</span>
+                                <ul>
+                                    <li>JavaScript/Frontend. Stage 0 (in progress)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- <hr/> -->
+
+            <section class="section" id="languages">
+                <h2 class="languages-title">Languages:</h2>
+                <ul>
+                    <li>Russian - Native</li>
+                    <li>English - Intermediate</li>
+                </ul>
+            </section>
+        </div>
     </main>
 
     <footer class="footer">
