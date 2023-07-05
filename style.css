@@ -38,7 +38,9 @@ html {
 }
 
 body {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -60,17 +62,18 @@ body {
 }
 
 .nav .nav-list .nav-link {
+    font-weight: 300;
     padding: 0 20px;
     line-height: 50px;
     text-decoration: none;
     color: black;
     font-size: medium;
-    transition: 0.5s;
-    font-weight: 300;
+    transition: color 0.5s;
 }
 
 .nav .nav-list .nav-link:hover {
     text-decoration: underline;
+    color: blue;
 }
 
 .main .main-container {
@@ -92,16 +95,29 @@ body {
     font-weight: 700;
 }
 
-.profile-title {
-    font-weight: 900;
-}
-
 #contacts span {
     font-weight: 700;
 }
 
 #education span {
     font-weight: 700;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#contacts .link {
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+}
+
+#contacts .link:hover {
+    text-decoration: underline;
+    color: blue;
 }
 
 .header {
