@@ -1,32 +1,22 @@
 @font-face {
-    font-family: Roboto;
-    src: url("./assets/fonts/Roboto-Thin.ttf");
-    font-weight: 100;
-}
-@font-face {
-    font-family: Roboto;
-    src: url("./assets/fonts/Roboto-Light.ttf");
-    font-weight: 300;
-}
-@font-face {
-    font-family: Roboto;
-    src: url("./assets/fonts/Roboto-Regular.ttf");
+    font-family: Urbanist;
+    src: url("./assets/fonts/Urbanist-Regular.ttf");
     font-weight: 400;
 }
 @font-face {
-    font-family: Roboto;
-    src: url("./assets/fonts/Roboto-Medium.ttf");
+    font-family: Urbanist;
+    src: url("./assets/fonts/Urbanist-Medium.ttf");
     font-weight: 500;
 }
 @font-face {
-    font-family: Roboto;
-    src: url("./assets/fonts/Roboto-Bold.ttf");
-    font-weight: 700;
+    font-family: Urbanist;
+    src: url("./assets/fonts/Urbanist-SemiBold.ttf");
+    font-weight: 400;
 }
 @font-face {
-    font-family: Roboto;
-    src: url("./assets/fonts/Roboto-Black.ttf");
-    font-weight: 900;
+    font-family: Urbanist;
+    src: url("./assets/fonts/Urbanist-Bold.ttf");
+    font-weight: 500;
 }
 
 * {
@@ -38,15 +28,15 @@ html {
 }
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: Urbanist, sans-serif;
     font-size: 16px;
     font-weight: 400;
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
 }
 
 .container {
@@ -54,17 +44,22 @@ body {
     margin: 0 auto;
 }
 
+.header {
+    height: 40px;
+    border-bottom: 2px solid #937131;
+}
+
 .nav .nav-list {
     display: flex;
-    justify-content: flex-end;
+    justify-content:space-around;
     align-items: center;
     list-style: none;
 }
 
 .nav .nav-list .nav-link {
     font-weight: 300;
-    padding: 0 20px;
-    line-height: 50px;
+    /* padding: 0 20px; */
+    /* line-height: 50px; */
     text-decoration: none;
     color: black;
     font-size: medium;
@@ -73,7 +68,7 @@ body {
 
 .nav .nav-list .nav-link:hover {
     text-decoration: underline;
-    color: blue;
+    color: #937131;
 }
 
 .main .main-container {
@@ -134,14 +129,10 @@ body {
 }
 
 
-.header {
+/* .main {
     border: 1px solid red;
-}
-
-.main {
-    border: 1px solid red;
-}
+} */
 
 .footer {
-    border: 1px solid red;
+    border-top: 2px solid #937131;
 }
