@@ -12,12 +12,12 @@
         <div class="container">
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                    <li class="nav-item"><a href="#summary" class="nav-link">About me</a></li>
-                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#profile" class="nav-link">About me</a></li>
                     <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                     <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,101 +30,107 @@
                 <div class="profile-info">
                     <h1 class="section-title">Nikita Babikov</h1>
                     <p class="job">Junior Frontend Developer</p>
+                    <div class="profile-descr">
+                        <p>I started to work as a Junior Frontend Developer and my aim is to become Senior Frontend Developer. My length of work is about one year now. In the future I want to learn some information about Backend part of the software development to understand the whole proccess of creating the web application.</p>
+                        <p>I improve my skills every day, learn some new information about JS, Git and IT in general. I read articles connected with IT and listen to some podcasts on YouTube. Also I try to practice every day too.</p>
+                        <p>I am hard-working, fast-learner and repsonsible person and I love to learn something new.</p>
+                    </div>
                 </div>
             </section>
             <!-- <hr/> -->
-
-            <section class="section" id="contacts">
-                <h2 class="section-subtitle">Contact information:</h2>
-                <ul>
-                    <li><span>Email:</span> nikita.babikov@mail.ru</li>
-                    <li><span>Telegram:</span> <a href="https://t.me/atlankitt" class="link">Nikita Babikov</a></li>
-                    <li><span>GitHub:</span> <a href="https://github.com/LivingstoneDoc" class="link">LivingstoneDoc</a></li>
-                    <li><span>RS School Discord Server Nickname:</span> Nick B. (@LivingstoneDoc)</li>
-                </ul>
-            </section>
-            <!-- <hr/> -->
-
-            <section class="section" id="summary">
+            <!-- <section class="section" id="summary">
                 <h2 class="section-subtitle">About me:</h2>
-                <p>I started to work as a Junior Frontend Developer and my aim is to become Senior Frontend Developer. My length of work is about one year now. In the future I want to learn some information about Backend part of the software devepolpent to understand the whole proccess of creating the web application.</p>
-                <p>I improve my skills every day, learn some new information about JS, Git and IT in general. I read articles connected with IT and listen to some podcasts on YouTube. Also I try to practice every day too.</p>
-                <p>I am hard-working, fast-learner and repsonsible person and I love to learn something new.</p>
-            </section>
-            <!-- <hr/> -->
+                
+            </section> -->
 
-            <section class="section" id="skills">
-                <h2 class="section-subtitle">Skills:</h2>
-                <ul>
-                    <li>HTML5 & CSS3</li>
-                    <li>JS Basics</li>
-                    <li>React</li>
-                    <li>Git, GitHub, GitLab</li>
-                    <li>VS Code</li>
-                    <li>Figma</li>
-                </ul>
-            </section>
-            <!-- <hr/> -->
+            <div class="left-part">
+                <section class="section" id="education">
+                    <h2 class="section-subtitle">Education:</h2>
+                    <ul class="education-list">
+                        <li><span>University: </span>Izhevsk State Technical University
+                            <ul class="education-list">
+                                <li>Informatics and Computer Engineering Institute</li>
+                            </ul>
+                        </li>
+                        <li><span>Courses:</span>
+                            <ul class="education-list">
+                                <li><span>Udemy:</span>
+                                    <ul class="education-list">
+                                        <li>Web-developer (in progress)</li>
+                                        <li>JavaScript. From zero to result (in progress)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="education-list">
+                                <li><span>RS School:</span>
+                                    <ul class="education-list">
+                                        <li>JavaScript/Frontend. Stage 0 (in progress)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+    
+                <!-- <section class="section" id="languages">
+                    <h2 class="section-subtitle">Languages:</h2>
+                    <ul>
+                        <li>Russian - Native</li>
+                        <li>English - Intermediate</li>
+                    </ul>
+                </section> -->
+    
+                <section class="section" id="contacts">
+                    <h2 class="section-subtitle">Contacts:</h2>
+                    <ul>
+                        <li><span>Email:</span> nikita.babikov@mail.ru</li>
+                        <li><span>Telegram:</span> <a href="https://t.me/atlankitt" class="link">Nikita Babikov</a></li>
+                        <li><span>GitHub:</span> <a href="https://github.com/LivingstoneDoc" class="link">LivingstoneDoc</a></li>
+                        <li><span>Discord:</span> Nick B. (@LivingstoneDoc)</li>
+                    </ul>
+                </section>
+            </div>
 
-            <section class="section" id="code">
-                <h2 class="section-subtitle">Code example:</h2>
-                <p>Given a random non-negative number, you have to return the digits of this number within an array in reverse order.</p>
-                <code>
-                    <pre>
-                        function getConvertArr(num) {
-                            num = String(num);
-                            let arrNumStr = num.split('');
-                            let newArrNum = [];
-                            if (num < 0) {
-                              return 'Please, type positive number';
-                            }
-                            for (let i = 0; i < arrNumStr.length; i++) {
-                              newArrNum[i] = arrNumStr[arrNumStr.length - i - 1];
-                              newArrNum[i] = Number(newArrNum[i]);
-                            }
-                            return newArrNum;
-                          }
-                    </pre>
-                </code>
-            </section>
-            <!-- <hr/> -->
-
-            <section class="section" id="education">
-                <h2 class="section-subtitle">Education:</h2>
-                <ul>
-                    <li><span>University: </span>Izhevsk State Technical University
-                        <ul>
-                            <li>Informatics and Computer Engineering Institute</li>
-                        </ul>
-                    </li>
-                    <li><span>Courses:</span>
-                        <ul>
-                            <li><span>Udemy:</span>
-                                <ul>
-                                    <li>Web-developer (in progress)</li>
-                                    <li>JavaScript. From zero to result (in progress)</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li><span>RS School:</span>
-                                <ul>
-                                    <li>JavaScript/Frontend. Stage 0 (in progress)</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-            <!-- <hr/> -->
-
-            <section class="section" id="languages">
-                <h2 class="section-subtitle">Languages:</h2>
-                <ul>
-                    <li>Russian - Native</li>
-                    <li>English - Intermediate</li>
-                </ul>
-            </section>
+            <div class="right-part">
+                <section class="section" id="skills">
+                    <h2 class="section-subtitle">Skills:</h2>
+                    <ul class="skills-list">
+                        <li class="skills-item">HTML5 & CSS3</li>
+                        <li class="skills-item">JS Basics</li>
+                        <li class="skills-item">React</li>
+                        <li class="skills-item">Git, GitHub, GitLab</li>
+                        <li class="skills-item">VS Code</li>
+                        <li class="skills-item">Figma</li>
+                    </ul>
+                    <h2 class="section-subtitle" id="languages">Languages:</h2>
+                    <ul class="languages-list">
+                        <li class="languages-item">Russian - Native</li>
+                        <li class="languages-item">English - Intermediate</li>
+                    </ul>
+                </section>
+    
+                <section class="section" id="code">
+                    <h2 class="section-subtitle">Code example:</h2>
+                    <p>Given a random non-negative number, you have to return the digits of this number within an array in reverse order.</p>
+                    <code>
+                        <pre>
+                            function getConvertArr(num) {
+                                num = String(num);
+                                let arrNumStr = num.split('');
+                                let newArrNum = [];
+                                if (num < 0) {
+                                  return 'Please, type positive number';
+                                }
+                                for (let i = 0; i < arrNumStr.length; i++) {
+                                  newArrNum[i] = arrNumStr[arrNumStr.length - i - 1];
+                                  newArrNum[i] = Number(newArrNum[i]);
+                                }
+                                return newArrNum;
+                              }
+                        </pre>
+                    </code>
+                </section>
+            </div>
         </div>
     </main>
 
