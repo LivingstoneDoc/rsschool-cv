@@ -11,12 +11,12 @@
 @font-face {
     font-family: Urbanist;
     src: url("./assets/fonts/Urbanist-SemiBold.ttf");
-    font-weight: 400;
+    font-weight: 600;
 }
 @font-face {
     font-family: Urbanist;
     src: url("./assets/fonts/Urbanist-Bold.ttf");
-    font-weight: 500;
+    font-weight: 700;
 }
 
 * {
@@ -31,7 +31,7 @@ body {
     font-family: Urbanist, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     margin: 0;
     padding: 0;
     /* display: flex; */
@@ -51,15 +51,13 @@ body {
 
 .nav .nav-list {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
 }
 
 .nav .nav-list .nav-link {
-    font-weight: 300;
-    /* padding: 0 20px; */
-    /* line-height: 50px; */
+    font-weight: 400;
     text-decoration: none;
     color: black;
     font-size: medium;
@@ -71,7 +69,7 @@ body {
     color: #937131;
 }
 
-.main .main-container {
+/* .main .main-container {
     display: flex;
     flex-wrap: wrap;
 }
@@ -84,10 +82,23 @@ body {
     .section {
         width: 100%;
     }
+} */
+
+#profile {
+    display: flex;
 }
 
-#profile span {
+#profile .avatar {
+    width: 230px;
+}
+
+#profile .job {
     font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.1cm;
+    margin: 4px 0 0 20px;
+    text-transform: uppercase;
+    color: #937131;
 }
 
 #contacts span {
@@ -99,6 +110,12 @@ body {
 }
 
 .section-title {
+    margin: 11px 0 0 20px;
+    font-weight: 700;
+    font-size: 56px;
+}
+
+.section-subtitle {
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
