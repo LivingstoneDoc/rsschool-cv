@@ -89,9 +89,20 @@ body {
     display: flex;
 }
 
-#profile .avatar {
-    /* width: 250px; */
-    width: 43%;
+#profile .my-flex-image {
+    display: flex;
+    align-items: center;
+    width: calc(50% - 90px);
+    height: 300px;
+    /* flex-wrap: wrap; */
+}
+
+#profile .my-flex-image .avatar {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
 }
 
 #profile .job {
@@ -130,18 +141,6 @@ body {
     text-transform: uppercase;
 }
 
-/* #summary {
-    display: flex;
-} */
-
-#contacts span {
-    font-weight: 700;
-}
-
-#education span {
-    font-weight: 700;
-}
-
 .link {
     text-decoration: none;
     color: black;
@@ -153,10 +152,10 @@ body {
     color: blue;
 }
 
-#summary {
+/* #summary {
     margin-top: 20px;
     background-color: #DDB376;
-}
+} */
 
 .left-part {
     width: 20%;
@@ -168,19 +167,21 @@ body {
 
 #education {
     margin-top: 20px;
+    /* padding: 10px; */
     /* width: 40%; */
-    background-color: #EDD9B9;
+    background-color: #F7F3D7;
 }
 
 #education .education-list {
     list-style: none;
+    /* padding-left: 10; */
 }
 
 #skills {
     margin-top: 20px;
     /* width: 78%; */
     /* height: 10%; */
-    background-color: #F6E5D1;
+    background-color: #F7F6F0;
     margin-left: 20px;
 }
 
@@ -196,12 +197,15 @@ body {
     list-style: none;
 }
 
-/* .languages-list .languages-item {
-    width:205px;
-} */
+#contacts {
+    background-color: #F7F1EB;
+    padding: 10px 16px;
+}
 
 #code {
     margin-left: 20px;
+    background-color: #F2F5F7;
+    padding: 10px 16px 20px 16px;
 }
 
 .footer .github-icon {
@@ -223,5 +227,6 @@ body {
 } */
 
 .footer {
+    height: 40px;
     border-top: 2px solid #937131;
 }
