@@ -136,8 +136,11 @@ body {
 }
 
 .section-subtitle {
+    margin: 0;
     font-size: 24px;
     font-weight: 700;
+    color: #937131;
+    letter-spacing: 0.1cm;
     text-transform: uppercase;
 }
 
@@ -167,14 +170,23 @@ body {
 
 #education {
     margin-top: 20px;
-    /* padding: 10px; */
-    /* width: 40%; */
+    padding: 16px 10px;
+    color: #534C40;
     background-color: #F7F3D7;
 }
 
-#education .education-list {
+#education ul {
     list-style: none;
-    /* padding-left: 10; */
+    padding: 0;
+}
+
+#education .education-sublist-item {
+    padding-top: 10px
+}
+
+#education span {
+    font-weight: 600;
+    color: #534C40
 }
 
 #skills {
@@ -198,6 +210,7 @@ body {
 }
 
 #contacts {
+    margin-top: 20px;
     background-color: #F7F1EB;
     padding: 10px 16px;
 }
