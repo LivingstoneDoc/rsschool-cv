@@ -32,6 +32,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     min-height: 100vh;
+    /* min-height: 100%; */
     margin: 0;
     padding: 0;
     /* display: flex; */
@@ -139,7 +140,6 @@ body {
     margin: 0;
     font-size: 24px;
     font-weight: 700;
-    color: #937131;
     letter-spacing: 0.1cm;
     text-transform: uppercase;
 }
@@ -155,17 +155,12 @@ body {
     color: blue;
 }
 
-/* #summary {
-    margin-top: 20px;
-    background-color: #DDB376;
-} */
-
 .left-part {
     width: 20%;
 }
 
 .right-part {
-    width: 79%
+    width: 79%;
 }
 
 #education {
@@ -175,50 +170,104 @@ body {
     background-color: #F7F3D7;
 }
 
+#education .section-subtitle {
+    color: #937131;
+}
+
+#education .education-list {
+    margin-top: 20px;
+}
+
 #education ul {
     list-style: none;
     padding: 0;
 }
 
 #education .education-sublist-item {
-    padding-top: 10px
+    padding-top: 10px;
 }
 
 #education span {
     font-weight: 600;
-    color: #534C40
+    color: #534C40;
 }
 
 #skills {
-    margin-top: 20px;
-    /* width: 78%; */
-    /* height: 10%; */
+    margin: 20px 0 0 20px;
+    padding: 16px 10px;
     background-color: #F7F6F0;
-    margin-left: 20px;
+}
+
+#skills .section-subtitle {
+    color: #937F31;
 }
 
 #skills .skills-list {
     display: flex;
     justify-content:space-around;
+    margin-top: 20px;
     list-style: none;
+    font-weight: 600;
+    color: #534F40;
 }
 
 .languages-list {
     display: flex;
     justify-content:space-around;
     list-style: none;
+    font-weight: 600;
+    color: #534F40;
 }
 
 #contacts {
     margin-top: 20px;
     background-color: #F7F1EB;
-    padding: 10px 16px;
+    padding: 16px 10px 25px 10px;
+}
+
+#contacts .section-subtitle {
+    color: #272421;
+}
+
+#contacts .contacts-list {
+    list-style: none;
+    padding: 0;
+    font-weight: 500;
+    color: #534940;
+}
+
+#contacts .contacts-list li {
+    margin-top: 20px;
+}
+
+#contacts .contacts-list li span {
+    font-weight: 600;
+    color: #534940;
+}
+
+#contacts .contacts-list a {
+    color: #534940;
 }
 
 #code {
-    margin-left: 20px;
+    margin: 20px 0 0 20px;
     background-color: #F2F5F7;
-    padding: 10px 16px 20px 16px;
+    padding: 16px 10px;
+    color: #404953;
+}
+
+#code .section-subtitle {
+    color: #001122;
+}
+
+#code p {
+    margin: 20px 0 0 0;
+    font-weight: 600;
+}
+
+#code pre {
+    margin-top: 20px;
+    color: #404953;
 }
 
 .footer .github-icon {
