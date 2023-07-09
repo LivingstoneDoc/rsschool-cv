@@ -50,6 +50,15 @@ body {
     border-bottom: 2px solid #937131;
 }
 
+.link {
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
 .nav .nav-list {
     display: flex;
     justify-content: space-around;
@@ -58,15 +67,10 @@ body {
 }
 
 .nav .nav-list .nav-link {
-    font-weight: 400;
-    text-decoration: none;
     color: black;
-    font-size: medium;
-    transition: color 0.5s;
 }
 
 .nav .nav-list .nav-link:hover {
-    text-decoration: underline;
     color: #937131;
 }
 
@@ -76,15 +80,11 @@ body {
     padding: 0 24px;
 }
 
-/* .section {
-    width: 50%;
-}
-
 @media (max-width: 768px) {
     .section {
         width: 100%;
     }
-} */
+}
 
 #profile {
     display: flex;
@@ -95,7 +95,6 @@ body {
     align-items: center;
     width: calc(50% - 90px);
     height: 300px;
-    /* flex-wrap: wrap; */
 }
 
 #profile .my-flex-image .avatar {
@@ -103,23 +102,19 @@ body {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    /* object-fit: contain; */
 }
 
 #profile .job {
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 0.1cm;
-    /* margin: 4px 0 0 20px; */
     margin: 0;
     text-transform: uppercase;
     color: #937131;
 }
 
 .section-title {
-    /* margin: 11px 0 0 20px; */
     margin: 0;
-    /* margin-bottom: 10px; */
     font-weight: 700;
     font-size: 56px;
 }
@@ -129,7 +124,6 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-left: 20px;
-    /* align-items: center; */
 }
 
 #profile .profile-info .profile-descr p {
@@ -142,17 +136,6 @@ body {
     font-weight: 700;
     letter-spacing: 0.1cm;
     text-transform: uppercase;
-}
-
-.link {
-    text-decoration: none;
-    color: black;
-    transition: color 0.5s;
-}
-
-.link:hover {
-    text-decoration: underline;
-    color: blue;
 }
 
 .left-part {
@@ -245,8 +228,12 @@ body {
     color: #534940;
 }
 
-#contacts .contacts-list a {
+#contacts .contacts-list .link {
     color: #534940;
+}
+
+#contacts .contacts-list .link:hover {
+    color: #272421;
 }
 
 #code {
@@ -270,25 +257,21 @@ body {
     color: #404953;
 }
 
+.footer {
+    height: 40px;
+    border-top: 2px solid #937131;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .footer .github-icon {
     width: 35px;
 }
 
 .footer .rsschool-icon {
     width: 80px;
-}
-
-.footer .container {
-    display: flex;
-    justify-content: space-around;
-}
-
-
-/* .main {
-    border: 1px solid red;
-} */
-
-.footer {
-    height: 40px;
-    border-top: 2px solid #937131;
 }
