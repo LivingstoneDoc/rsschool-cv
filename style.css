@@ -1,0 +1,277 @@
+@font-face {
+    font-family: Urbanist;
+    src: url("./assets/fonts/Urbanist-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: Urbanist;
+    src: url("./assets/fonts/Urbanist-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: Urbanist;
+    src: url("./assets/fonts/Urbanist-SemiBold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: Urbanist;
+    src: url("./assets/fonts/Urbanist-Bold.ttf");
+    font-weight: 700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Urbanist, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 100vh;
+    /* min-height: 100%; */
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 40px;
+    border-bottom: 2px solid #937131;
+}
+
+.link {
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.nav .nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.nav .nav-list .nav-link {
+    color: black;
+}
+
+.nav .nav-list .nav-link:hover {
+    color: #937131;
+}
+
+.main .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 24px;
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
+
+#profile {
+    display: flex;
+}
+
+#profile .my-flex-image {
+    display: flex;
+    align-items: center;
+    width: calc(50% - 90px);
+    height: 300px;
+}
+
+#profile .my-flex-image .avatar {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#profile .job {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.1cm;
+    margin: 0;
+    text-transform: uppercase;
+    color: #937131;
+}
+
+.section-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 56px;
+}
+
+#profile .profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+#profile .profile-info .profile-descr p {
+    margin-bottom: 0;
+}
+
+.section-subtitle {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.1cm;
+    text-transform: uppercase;
+}
+
+.left-part {
+    width: 20%;
+}
+
+.right-part {
+    width: 79%;
+}
+
+#education {
+    margin-top: 20px;
+    padding: 16px 10px;
+    color: #534C40;
+    background-color: #F7F3D7;
+}
+
+#education .section-subtitle {
+    color: #937131;
+}
+
+#education .education-list {
+    margin-top: 20px;
+}
+
+#education ul {
+    list-style: none;
+    padding: 0;
+}
+
+#education .education-sublist-item {
+    padding-top: 10px;
+}
+
+#education span {
+    font-weight: 600;
+    color: #534C40;
+}
+
+#skills {
+    margin: 20px 0 0 20px;
+    padding: 16px 10px;
+    background-color: #F7F6F0;
+}
+
+#skills .section-subtitle {
+    color: #937F31;
+}
+
+#skills .skills-list {
+    display: flex;
+    justify-content:space-around;
+    margin-top: 20px;
+    list-style: none;
+    font-weight: 600;
+    color: #534F40;
+}
+
+.languages-list {
+    display: flex;
+    justify-content:space-around;
+    list-style: none;
+    font-weight: 600;
+    color: #534F40;
+}
+
+#contacts {
+    margin-top: 20px;
+    background-color: #F7F1EB;
+    padding: 16px 10px 25px 10px;
+}
+
+#contacts .section-subtitle {
+    color: #272421;
+}
+
+#contacts .contacts-list {
+    list-style: none;
+    padding: 0;
+    font-weight: 500;
+    color: #534940;
+}
+
+#contacts .contacts-list li {
+    margin-top: 20px;
+}
+
+#contacts .contacts-list li span {
+    font-weight: 600;
+    color: #534940;
+}
+
+#contacts .contacts-list .link {
+    color: #534940;
+}
+
+#contacts .contacts-list .link:hover {
+    color: #272421;
+}
+
+#code {
+    margin: 20px 0 0 20px;
+    background-color: #F2F5F7;
+    padding: 16px 10px;
+    color: #404953;
+}
+
+#code .section-subtitle {
+    color: #001122;
+}
+
+#code p {
+    margin: 20px 0 0 0;
+    font-weight: 600;
+}
+
+#code pre {
+    margin-top: 20px;
+    color: #404953;
+}
+
+.footer {
+    height: 40px;
+    border-top: 2px solid #937131;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .github-icon {
+    width: 35px;
+}
+
+.footer .rsschool-icon {
+    width: 80px;
+}
